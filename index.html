@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>D's Rare Minerals Store Guide</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="application.js"></script>
+
+    <link href="bootstrap.min.css" rel="stylesheet">  <!--the css sheet provided in the assignment download -->
+    <link href="style.css" rel="stylesheet"> <!-- check to see if the stylesheet is linked properly-->
+  </head>
+  <!-- above is the head which is given in the assignment -->
+  <body>
+    <div class="container">
+        <h1 class="text-center">Current Inventory Ordering Guide</h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="table table-responsive">
+                    <table>
+                    <thead> <!-- title of table and names of columns -->
+                        <tr>
+                            <th scope="col">Mineral (Species, Locality)</th>
+                            <th scope="col">Price (USD)</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total (USD)</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>  <!-- here is where the rows go -->
+                        <tr>
+                            <td class="mineral_name">Benitoite, California USA</td>
+                            <td class="mineral_price">500.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="mineral_name">Atacamite, Antofagasta Chile</td>
+                            <td class="mineral_price">60.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="mineral_name">Boleite, Santa Rosalia Mexico</td>
+                            <td class="mineral_price">250.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="mineral_name">Barrerite, Alaska USA</td>
+                            <td class="mineral_price">125.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="mineral_name">Plumbogummite, Guangxi China</td>
+                            <td class="mineral_price">75.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>
+                        <tr>
+                            <td class="mineral_name">Arsendescloizite, Durango Mexico</td>
+                            <td class="mineral_price">325.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>        
+                        <tr>
+                            <td class="mineral_name">Gem Silica, Arizona USA</td>
+                            <td class="mineral_price">800.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>        
+                        <tr>
+                            <td class="mineral_name">Cylindrite, Oruro Bolivia</td>
+                            <td class="mineral_price">95.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>   
+                        <tr>
+                            <td class="mineral_name">Tanzanite, Kilimanjaro Tanzania</td>
+                            <td class="mineral_price">650.00</td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td class="row_total_price"></td>
+                            <td><button class="btn btn-light btn-sm remove">Clear</button></td>
+                        </tr>           
+                        <tr id="addItem">
+                            <td><input class="form-control input-md" type="text" id="new_mineral_name" placeholder="New mineral" /></td>
+                            <td><input class="form-control input-md" type="number" id="new_mineral_price" placeholder="Price per specimen" /></td>
+                            <td class="quantity"><input type="number" /></td>
+                            <td colspan="1"></td>
+                            <td><button class="btn btn-secondary btn-sm add">Add</button></td>
+                        </tr>
+                    <tfoot>  <!-- should this go under /tbody or not? -->
+                        <tr>
+                            <td colspan="3" id="cartCostLabel">Total Order Cost</td>
+                            <td id="final_checkout_total">0.00</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

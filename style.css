@@ -1,0 +1,20 @@
+body {
+    background-image: url(crystal_background.jpg);
+    background-size: cover;
+    background-position-x: center;  /* position not as important */
+}
+.container {
+    background-color: #9c9999;  /* wanted something more rock like in color */
+    opacity: 0.9;
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.row {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+td {
+    padding-bottom: 10px;
+    padding-right: 20px; /* anything lower makes the columns too close */
+}
