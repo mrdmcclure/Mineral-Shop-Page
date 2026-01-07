@@ -1,4 +1,4 @@
-$(document).ready(function() {  // check that this links to the html!
+$(document).ready(function() {
 
     //  add new item on the bottom of the list
     $('.btn.add').on('click', function (event) {
@@ -20,7 +20,7 @@ $(document).ready(function() {  // check that this links to the html!
     });
 
     // remove an item by clicking the clear button on the right
-    $('tbody').on('click', '.btn.remove', function () {  // check that the right buttom is linked here 
+    $('tbody').on('click', '.btn.remove', function () { 
         // a button labeled "clear" is not specified but the clear button is the only one which removes things
         $(this).closest('tr').remove();
         updateFinalTotal();
